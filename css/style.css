@@ -1,0 +1,128 @@
+body {
+background-color: "grey";
+  background-color: black;
+  background-image: url("https://c2.staticflickr.com/6/5219/5436444822_66525ce22d_b.jpg");
+  background-size: auto;
+  font-family: sans-serif;
+  color: #eee;
+  min-width: 600px;
+    font-family: Arial;
+  margin: 0;
+}
+
+
+/* ***Title Bar*** */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* ***Section*** */
+
+.content {
+    width: 80%;
+    margin: 15px auto;
+    background-color: rgba(100, 100, 100, .7);
+    border: 1px solid #ccc;border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* ***Project Section*** */
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+/* Float the list items side by side */
+ul.tab li {
+    float: left;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    color: black;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+}
+
+.projects {
+    width: 100%;
+    text-align: center
+}
+
+.project {
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    margin: 15px;
+    background-color: #eee;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center
+}
+
+.project a {
+    color: black;
+    display: block;
+    padding: 14px 16px;
+    font-size: 17px;
+    color: black;
+}
+
+.wrapper {
+    width: 220px;
+    height: 240px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.wrapper iframe {
+    width: 660px;
+    height: 720px;
+    transform: scale(0.333);
+    transform-origin: left top;
+    border: 0;
+}
+
+.project img {
+    max-width: 220px;
+    max-height: 240px;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+text-align: left;
+}

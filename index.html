@@ -11,7 +11,7 @@ https://cwksophie.github.io/
 
 FOLLOW THESE RULES:
 
-https://www.w3schools.com/html/html5_semantic_elements.asp
+Semantic Elements in HTML5: https://www.w3schools.com/html/html5_semantic_elements.asp
 Use elements:
 header
 section
@@ -19,4 +19,100 @@ paragraph
 footer
 
 ***avoid div tags***
+Advanced project:
+    ***can use bootstrap or media queries, as advanced project
+        https://www.w3schools.com/html/html_responsive.asp
+    ***can use accordion js to make the collapsible content, as advanced project
+        https://www.w3schools.com/howto/howto_js_accordion.asp
+
+1. Set up HMTL
+2. Create external stylesheet
+3. Add About Me section
+4. Add Projects section
+
 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Tanya CWK Portfolio</title>
+
+    <!-- Favicon -->
+    <link href="images/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="images/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="images/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="images/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="images/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="images/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="images/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="images/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="images/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json" rel="manifest">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="images/ms-icon-144x144.png" name="msapplication-TileImage">
+    <meta content="#ffffff" name="theme-color">
+
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+    <h1>Tanya CWK's Portfolio</h1>
+
+</header>
+<main class="content">
+<section class="intro">
+    <h1> About Me</h1>
+    <p>I grew up in California and stayed to go to college. After, I studied, I became interested in programming and
+        started
+        to learn how to code.</p>
+    <p>The first language that I learned was HTML, as well as, CSS, JavaScript, Python and PHP. I started building
+        websites
+        and moved onto teaching coding.</p>
+    <p>When I am not programming or teaching, I like spend time riding my bike, reading and cooking. I also enjoy
+        dancing,
+        swimming and surfing. </p>
+</section>
+<section>
+    <h1>Projects</h1>
+    <ul class="tab">
+        <li><a class="tablinks" href="javascript:void(0)" onclick="openTab(event, 'Web')">Web Development</a></li>
+        <li><a class="tablinks" href="javascript:void(0)" onclick="openTab(event, 'Python')">Python</a></li>
+    </ul>
+
+    <article class="text tabcontent" id="Web">
+        <h3>Web Development</h3>
+        <p>These are my web development projects.</p>
+       <!--  <div class="projects">
+            <div class="project">
+                <a href="#">Bootstrap</a>
+                <div class="wrapper">
+                    <iframe src="#"></iframe>
+                </div>
+            </div>
+
+        </div> -->
+    </article>
+
+    <article class="text tabcontent" id="Python">
+        <h3>Python</h3>
+        <p>These are my Python projects.</p>
+        <p>Note: All Python projects are created with Python 3.</p>
+        <div class="projects">
+            <div class="project">
+                <a href="battleship/index.html">Battleship Game</a>
+                <img src="images/battleshipProject.png"></img>
+            </div>
+        </div>
+    </article>
+</section>
+</main>
+<footer>Tanya Pulley Portfolio &#169;</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
