@@ -1,6 +1,6 @@
 # This is the portfolio for CWK Level 5.
 
-##Directions
+Directions
 
 Write a properly formatted HTML document with links to necessary css andJS files.
 ❏Create a homepage with nice styling.
