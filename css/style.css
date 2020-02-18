@@ -1,8 +1,5 @@
 body {
-background-color: "grey";
-  background-color: black;
-  background-image: url("https://c2.staticflickr.com/6/5219/5436444822_66525ce22d_b.jpg");
-  background-size: auto;
+background-color: #f6f6f6;
   font-family: sans-serif;
   color: #eee;
   min-width: 600px;
@@ -13,11 +10,12 @@ background-color: "grey";
 
 /* ***Title Bar*** */
 .header {
-  padding: 60px;
+    background-image: url(../images/background.png);
+  padding: 0px;
   text-align: center;
-  background: #1abc9c;
   color: white;
   font-size: 30px;
+  margin: 0 auto;
 }
 
 /* ***Section*** */
