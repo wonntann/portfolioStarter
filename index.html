@@ -40,7 +40,8 @@ Advanced project:
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Tanya CWK Portfolio</title>
-
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
     <!-- Favicon -->
     <link href="images/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
     <link href="images/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
@@ -65,66 +66,190 @@ Advanced project:
 </head>
 
 <body>
-    <header class="header">
-        <h1>Tanya CWK's Portfolio</h1>
-    </header>
-    <nav>
-        <img >
-    </nav>
-    <main class="content">
-        <section class="intro">
-            <h1> About Me</h1>
-            <p>I grew up in California and stayed to go to college. After, I studied, I became interested in programming
-                and
-                started
-                to learn how to code.</p>
-            <p>The first language that I learned was HTML, as well as, CSS, JavaScript, Python and PHP. I started
-                building
-                websites
-                and moved onto teaching coding.</p>
-            <p>When I am not programming or teaching, I like spend time riding my bike, reading and cooking. I also
-                enjoy
-                dancing,
-                swimming and surfing. </p>
-        </section>
-        <section>
-            <h1>Projects</h1>
-            <ul class="tab">
-                <li><a class="tablinks" href="javascript:void(0)" onclick="openTab(event, 'Web')">Web Development</a>
-                </li>
-                <li><a class="tablinks" href="javascript:void(0)" onclick="openTab(event, 'Python')">Python</a></li>
-            </ul>
 
-            <article class="text tabcontent" id="Web">
-                <h3>Web Development</h3>
-                <p>These are my web development projects.</p>
-                <!--  <div class="projects">
-            <div class="project">
-                <a href="#">Bootstrap</a>
-                <div class="wrapper">
-                    <iframe src="#"></iframe>
+
+    <header class="navigation fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand font-tertiary h3" href="index.html">
+                <img src="images/logo.png"
+                    alt="logo"></a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse text-center" id="navigation">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero area -->
+    <section class="hero-area bg-primary" id="parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 mx-auto">
+                    <h1 class="text-white font-tertiary">Hi! I’m <br> Tanya <br> Web designer</h1>
                 </div>
             </div>
+        </div>
+        <div class="layer-bg w-100">
+            <img class="img-fluid w-100" src="images/leaf-bg.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l2">
+            <img src="images/dots-cyan.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l3">
+            <img src="images/leaf-orange.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l4">
+            <img src="images/dots-orange.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l5">
+            <img src="images/leaf-yellow.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l6">
+            <img src="images/leaf-cyan.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l7">
+            <img src="images/dots-group-orange.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l8">
+            <img src="images/leaf-pink-round.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l9">
+            <img src="images/leaf-cyan-2.png" alt="bg-shape">
+        </div>
+    </section>
+    <!-- /hero area -->
 
-        </div> -->
-            </article>
+    <!-- about -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <p class="font-secondary paragraph-lg text-dark">I grew up in California and stayed to go to
+                        college. After, I
+                        studied, I became interested in programming
+                        and
+                        started
+                        to learn how to code.
+                        The first language that I learned was HTML, as well as, CSS, JavaScript, Python and PHP. I
+                        started
+                        building
+                        websites
+                        and moved onto teaching coding.</p>
+                    <p>When I am not programming or teaching, I like spend time riding my bike, reading and cooking. I
+                        also
+                        enjoy
+                        dancing,
+                        swimming and surfing. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /about -->
 
-            <article class="text tabcontent" id="Python">
-                <h3>Python</h3>
-                <p>These are my Python projects.</p>
-                <p>Note: All Python projects are created with Python 3.</p>
-                <div class="projects">
-                    <div class="project">
-                        <a href="battleship/index.html">Battleship Game</a>
-                        <img src="images/battleshipProject.png"></img>
+
+    <!-- portfolio -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Portfolio</h2>
+                </div>
+            </div>
+            <div class="row shuffle-wrapper">
+                <div class="col-lg-4 col-6 mb-4 shuffle-item">
+                    <div class="position-relative rounded hover-wrapper">
+                        <img src="images/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
+                        <div class="hover-overlay">
+                            <div class="hover-content">
+                                <a class="btn btn-light btn-sm" href="battleship/index.html">view project</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </article>
-        </section>
-    </main>
-    <footer>Tanya Pulley Portfolio &#169;</footer>
-    <script src="js/main.js"></script>
-    <!-- <a href='https://pngtree.com/so/circular'>circular png from pngtree.com</a> -->
+                <!-- <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img src="images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img src="images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img src="images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100">
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- /portfolio -->
+
+
+    <!-- footer -->
+    <footer class="bg-dark footer-section">
+        <div class="border-top text-center border-dark py-5">
+            <p class="mb-0 text-light">Tanya Pulley Portfolio &#169;<script>
+                    var CurrentYear = new Date().getFullYear()
+                    document.write(CurrentYear)
+                </script>
+            </p>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
