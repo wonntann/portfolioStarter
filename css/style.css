@@ -1,23 +1,108 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
-@font-face {
-  font-family: 'BwNistaInt-xBd';
-  src: url("../plugins/fonts/BwNistaInt-xBd.woff") format("woff");
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
+a {
+  color: #252525;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Navigation */
+header {  
+  background-color: #670000;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #670000;
+  z-index: 100;
+  padding: 3px;
+}
+
+nav img {
+  position: absolute;
+  margin-left: 10px;
+  height: auto;
+  width: 25px;
+}
+
+ul {
+  padding: 0;
+  margin-left: 60%;
+  list-style: none;
+}
+
+li {
+  float: left;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+/* Hero */
+.hero-area {
+  background-color: #670000;
+  z-index: -20;
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: justify;
+  width: 100vw;
+  height: 100vh;
+  font-size: 5em;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 20;
+}
+
+.layer {
+  position: absolute;
+  float: right;
+  margin: 0px 0px 15px 15px;
+}
+
+.img-fluid {
+  width: 30rem;
+  left: 0;
+  top: -90px;
+  margin-bottom: -90px;
+}
+
+#\12 {
+top: 10px;
+}
 
 /* About */
-.paragraph {
-  font-weight: 400;
+#about {
+  background-color: #fff;
+}
+
+p {
+  font-weight: 500;
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
@@ -26,14 +111,12 @@ body {
 
 
 /* Portfolio */
-/* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
   float: left;
@@ -45,17 +128,14 @@ body {
   font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -65,15 +145,19 @@ body {
 
 .project {
   display: inline-block;
-width: 250px;
-height: 300px;
-margin: 15px;
-background-color:
-#eee;
-border-radius: 20px;
-border: 1px solid
-#ccc;
-text-align: center;
+  width: 250px;
+  height: 300px;
+  margin: 15px;
+  background-color: #eee;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: right;
 }
 
 /* Media Queries */
@@ -83,6 +167,7 @@ text-align: center;
     max-width: 50%;
   }
 }
+
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;

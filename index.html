@@ -52,117 +52,113 @@ Advanced project:
 
 
     <header class="navigation">
-        <nav class="navbar">
+        <nav>
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="logo"></a>
-            <div>>
-                <ul class="navbar-nav">
-                    <li>
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#about">about</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
+
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#about">about</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
     <!-- hero area -->
-    <section class="hero-area">
-        <div class="container">
-            <div class="row">
-                <div class="">
-                    <h1 class="text-white font-tertiary">Hi! I’m <br> Tanya <br> Web designer</h1>
+    
+        <section class="hero-area">
+            <div class="hero-inner">
+                <h1 class="hero-text">Hi! I’m <br> Tanya </h1>
+            </div>
+            <!-- <div class="layer"> 
+                <img class="img-fluid" src="images/leaf-bg.png" alt="bg-shape">
+            </div>
+            <div class="layer" id="l2">
+                <img src="images/dots-cyan.png" alt="bg-shape">
+            </div>
+            <div class="layer" id="l3">
+                <img src="images/leaf-orange.png" alt="bg-shape">
+            </div>
+            <div class="layer" id="l4">
+                <img src="images/dots-orange.png" alt="bg-shape">
+            </div>
+            <div class="layer" id="l5">
+                <img src="images/leaf-yellow.png" alt="bg-shape">
+            </div>
+            <div class="layer" id="l6">
+                <img src="images/leaf-cyan.png" alt="bg-shape">
+            </div>
+            <div class="layer" id="l7">
+                <img src="images/dots-group-orange.png" alt="bg-shape">
+            </div>
+            <div class="layer" id="l8">
+                <img src="images/leaf-pink-round.png" alt="bg-shape">
+            </div>
+            <div class="layer" id="l9">
+                <img src="images/leaf-cyan-2.png" alt="bg-shape">
+            </div> -->
+        </section>
+        <!-- /hero area -->
+        <main>
+        <!-- about -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <p class="paragraph">I grew up in California and stayed to go to
+                        college. After, I
+                        studied, I became interested in programming
+                        and
+                        started
+                        to learn how to code.
+                        The first language that I learned was HTML, as well as, CSS, JavaScript, Python and PHP. I
+                        started
+                        building
+                        websites
+                        and moved onto teaching coding.</p>
+                    <p>When I am not programming or teaching, I like spend time riding my bike, reading and cooking. I
+                        also
+                        enjoy
+                        dancing,
+                        swimming and surfing. </p>
                 </div>
             </div>
-        </div>
-        <div class="layer-bg w-100">
-            <img class="img-fluid w-100" src="images/leaf-bg.png" alt="bg-shape">
-        </div>
-        <div class="layer" id="l2">
-            <img src="images/dots-cyan.png" alt="bg-shape">
-        </div>
-        <div class="layer" id="l3">
-            <img src="images/leaf-orange.png" alt="bg-shape">
-        </div>
-        <div class="layer" id="l4">
-            <img src="images/dots-orange.png" alt="bg-shape">
-        </div>
-        <div class="layer" id="l5">
-            <img src="images/leaf-yellow.png" alt="bg-shape">
-        </div>
-        <div class="layer" id="l6">
-            <img src="images/leaf-cyan.png" alt="bg-shape">
-        </div>
-        <div class="layer" id="l7">
-            <img src="images/dots-group-orange.png" alt="bg-shape">
-        </div>
-        <div class="layer" id="l8">
-            <img src="images/leaf-pink-round.png" alt="bg-shape">
-        </div>
-        <div class="layer" id="l9">
-            <img src="images/leaf-cyan-2.png" alt="bg-shape">
-        </div>
-    </section>
-    <!-- /hero area -->
-
-    <!-- about -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="row">
-                <p class="paragraph">I grew up in California and stayed to go to
-                    college. After, I
-                    studied, I became interested in programming
-                    and
-                    started
-                    to learn how to code.
-                    The first language that I learned was HTML, as well as, CSS, JavaScript, Python and PHP. I
-                    started
-                    building
-                    websites
-                    and moved onto teaching coding.</p>
-                <p>When I am not programming or teaching, I like spend time riding my bike, reading and cooking. I
-                    also
-                    enjoy
-                    dancing,
-                    swimming and surfing. </p>
-            </div>
-        </div>
-    </section>
-    <!-- /about -->
+        </section>
+        <!-- /about -->
 
 
-    <!-- portfolio -->
-    <section class="section" id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
+        <!-- portfolio -->
+        <section class="section" id="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
 
-            <div class="tab">
-                <button class="tablinks" onclick="openProject(event, 'webDevelopment')">Web Development</button>
-                <button class="tablinks" onclick="openProject(event, 'python')">Python</button>
-            </div>
+                <div class="tab">
+                    <button class="tablinks" onclick="openProject(event, 'webDevelopment')">Web Development</button>
+                    <button class="tablinks" onclick="openProject(event, 'python')">Python</button>
+                </div>
 
-            <div id="webDevelopment" class="tabcontent">
-                <h3>Web Development</h3>
-                <p>These are my projects for the web</p>
-                <div class="project">
-                    <a href="battleship/index.html">Battleship</a>
+                <div id="webDevelopment" class="tabcontent">
+                    <h3>Web Development</h3>
+                    <p>These are my projects for the web</p>
+                    <div class="project">
+                        <a href="battleship/index.html">Battleship</a>
 
+                    </div>
+                </div>
+
+                <div id="python" class="tabcontent">
+                    <h3>Python</h3>
+                    <p>These are my projects in python</p>
                 </div>
             </div>
-
-            <div id="python" class="tabcontent">
-                <h3>Python</h3>
-                <p>These are my projects in python</p>
-            </div>
-        </div>
-    </section>
-    <!-- /portfolio -->
-
+        </section>
+        <!-- /portfolio -->
+    </main>
 
     <!-- footer -->
     <footer class="footer-section">
