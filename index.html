@@ -40,26 +40,9 @@ Advanced project:
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Tanya CWK Portfolio</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+
     <!-- Favicon -->
-    <link href="images/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
-    <link href="images/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
-    <link href="images/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="images/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
-    <link href="images/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-    <link href="images/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
-    <link href="images/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
-    <link href="images/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-    <link href="images/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="images/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
-    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="images/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
-    <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="/manifest.json" rel="manifest">
-    <meta content="#ffffff" name="msapplication-TileColor">
-    <meta content="images/ms-icon-144x144.png" name="msapplication-TileImage">
-    <meta content="#ffffff" name="theme-color">
+
 
     <!-- Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
@@ -68,25 +51,19 @@ Advanced project:
 <body>
 
 
-    <header class="navigation fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand font-tertiary h3" href="index.html">
-                <img src="images/logo.png"
-                    alt="logo"></a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-                aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-
-            <div class="collapse navbar-collapse text-center" id="navigation">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+    <header class="navigation">
+        <nav class="navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo"></a>
+            <div>>
+                <ul class="navbar-nav">
+                    <li>
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#about">about</a>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                 </ul>
@@ -95,10 +72,10 @@ Advanced project:
     </header>
 
     <!-- hero area -->
-    <section class="hero-area bg-primary" id="parallax">
+    <section class="hero-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-11 mx-auto">
+                <div class="">
                     <h1 class="text-white font-tertiary">Hi! I’m <br> Tanya <br> Web designer</h1>
                 </div>
             </div>
@@ -137,24 +114,22 @@ Advanced project:
     <section class="section" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto text-center">
-                    <p class="font-secondary paragraph-lg text-dark">I grew up in California and stayed to go to
-                        college. After, I
-                        studied, I became interested in programming
-                        and
-                        started
-                        to learn how to code.
-                        The first language that I learned was HTML, as well as, CSS, JavaScript, Python and PHP. I
-                        started
-                        building
-                        websites
-                        and moved onto teaching coding.</p>
-                    <p>When I am not programming or teaching, I like spend time riding my bike, reading and cooking. I
-                        also
-                        enjoy
-                        dancing,
-                        swimming and surfing. </p>
-                </div>
+                <p class="paragraph">I grew up in California and stayed to go to
+                    college. After, I
+                    studied, I became interested in programming
+                    and
+                    started
+                    to learn how to code.
+                    The first language that I learned was HTML, as well as, CSS, JavaScript, Python and PHP. I
+                    started
+                    building
+                    websites
+                    and moved onto teaching coding.</p>
+                <p>When I am not programming or teaching, I like spend time riding my bike, reading and cooking. I
+                    also
+                    enjoy
+                    dancing,
+                    swimming and surfing. </p>
             </div>
         </div>
     </section>
@@ -164,62 +139,25 @@ Advanced project:
     <!-- portfolio -->
     <section class="section" id="portfolio">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="section-title">Portfolio</h2>
+            <h2>Portfolio</h2>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openProject(event, 'webDevelopment')">Web Development</button>
+                <button class="tablinks" onclick="openProject(event, 'python')">Python</button>
+            </div>
+
+            <div id="webDevelopment" class="tabcontent">
+                <h3>Web Development</h3>
+                <p>These are my projects for the web</p>
+                <div class="project">
+                    <a href="battleship/index.html">Battleship</a>
+
                 </div>
             </div>
-            <div class="row shuffle-wrapper">
-                <div class="col-lg-4 col-6 mb-4 shuffle-item">
-                    <div class="position-relative rounded hover-wrapper">
-                        <img src="images/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
-                        <div class="hover-overlay">
-                            <div class="hover-content">
-                                <a class="btn btn-light btn-sm" href="battleship/index.html">view project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img src="images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100">
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img src="images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100">
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img src="images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100">
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
-                </div>
-              </div>
-            </div>
-          </div> -->
+
+            <div id="python" class="tabcontent">
+                <h3>Python</h3>
+                <p>These are my projects in python</p>
             </div>
         </div>
     </section>
@@ -227,28 +165,18 @@ Advanced project:
 
 
     <!-- footer -->
-    <footer class="bg-dark footer-section">
-        <div class="border-top text-center border-dark py-5">
-            <p class="mb-0 text-light">Tanya Pulley Portfolio &#169;<script>
-                    var CurrentYear = new Date().getFullYear()
-                    document.write(CurrentYear)
-                </script>
-            </p>
-        </div>
+    <footer class="footer-section">
+        <p class="mb-0 text-light">Tanya Pulley Portfolio &#169;
+            <script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+            </script>
+        </p>
     </footer>
     <!-- /footer -->
 
-    <!-- jQuery -->
-    <script src="plugins/jQuery/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
-    <!-- slick slider -->
-    <script src="plugins/slick/slick.min.js"></script>
-    <!-- filter -->
-    <script src="plugins/shuffle/shuffle.min.js"></script>
-
     <!-- Main Script -->
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
