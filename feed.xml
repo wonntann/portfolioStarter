@@ -1,0 +1,21 @@
+ <xhtml version="1.0" encoding="utf-8">
+   <rss version="1.0">
+     <channel>
+       <title>CWK Portfolio</title>
+       <link>https://wonntann.github.io/portfoliocwk/</link>
+       <description>This are all of my completed projects for Level 5</description>
+       <language>en-us</language>
+       <image>
+         <link>https://github.com/wonntann/portfoliocwk/blob/master/images/logo.png</link>
+         <url>https://wonntann.github.io/portfoliocwk/</url>
+       </image>
+       <language>en-us</language>
+
+       <!-- Battleship -->
+       <item>
+         <title>Battleship</title>
+         <link>https://github.com/wonntann/portfoliocwk/blob/master/images/logo.png</link>
+         <description>
+           Destroy the computers ship in order to win the game</description>
+         <item>
+   </rss>
