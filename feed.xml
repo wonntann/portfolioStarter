@@ -1,5 +1,5 @@
  <?xml version="1.0" encoding="utf-8" ?>
-   <rss version="1.0">
+   <rss version="1.0" xmlns:atom="http://www.w3.org/2005/Atom">
      <channel>
        <title>CWK Portfolio</title>
        <link>https://wonntann.github.io/portfoliocwk/</link>
