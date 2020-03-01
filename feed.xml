@@ -1,5 +1,5 @@
- <?xml version="1.0" encoding="utf-8" ?>
-   <rss version="1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+ <? xml version="1.0" encoding="utf-8" ?>
+   <rss version="2.0">
      <channel>
        <title>CWK Portfolio</title>
        <link>https://wonntann.github.io/portfoliocwk/</link>
@@ -9,7 +9,6 @@
          <link>https://github.com/wonntann/portfoliocwk/blob/master/images/logo.png</link>
          <url>https://wonntann.github.io/portfoliocwk/</url>
        </image>
-       <language>en-us</language>
 
        <!-- Battleship -->
        <item>

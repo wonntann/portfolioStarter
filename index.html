@@ -46,9 +46,17 @@ Advanced project:
 
     <!-- Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
     <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" href="https://wonntann.github.io/portfoliocwk/feed.xml"
         title="CWK Portfolio">
+    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>
+    <!-- <script>
+        jQuery(function ($) {
+            $("#rss-feeds").rss("http://feeds.feedburner.com/premiumpixels");
+        });
+    </script> -->
 </head>
 
 <body>
@@ -70,11 +78,11 @@ Advanced project:
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a type="application/rss+xml" href="https://wonntann.github.io/portfoliocwk/feed.xml"> 
+                    <a type="application/rss+xml" id="rss-feeds" href="https://wonntann.github.io/portfoliocwk/feed.xml">
                         RSS
                     </a>
                 </li>
-                        </ul>
+            </ul>
         </nav>
     </header>
 
