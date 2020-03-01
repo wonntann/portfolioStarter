@@ -1,10 +1,10 @@
- <? xml version="1.0" encoding="utf-8" ?>
+ <?xml version="1.0" encoding="utf-8" ?>
    <rss version="2.0">
      <channel>
        <title>CWK Portfolio</title>
        <link>https://wonntann.github.io/portfoliocwk/</link>
        <description>This are all of my completed projects for Level 5</description>
-       <language>en-us</language>
+       <!-- <language>en-us</language> -->
        <image>
          <link>https://github.com/wonntann/portfoliocwk/blob/master/images/logo.png</link>
          <url>https://wonntann.github.io/portfoliocwk/</url>
