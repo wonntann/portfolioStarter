@@ -1,4 +1,6 @@
-# This is the portfolio for CWK Level 5.
+# This is the starter kit 
+
+You might notice some mistakes or need to add some requirements. Take this project and make it your own.
 
 Directions
 
@@ -8,8 +10,7 @@ Write a properly formatted HTML document with links to necessary css andJS files
 ❏Include a gallery of images or iframes with links to all each different Weband Python project.
 ❏Include a page for each different project.
 ❏Include pages for at least one Python game, one data analysis project, oneCSS animation, and one JS game.  May also include pages for any otherprojects as desired
-EXAMPLE:
-https://cwksophie.github.io/
+
 FOLLOW THESE RULES:
 Semantic Elements in HTML5: https://www.w3schools.com/html/html5_semantic_elements.asp
 Use elements:
